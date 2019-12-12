@@ -1,0 +1,40 @@
+{
+    "model" : {
+        "min_input_size":       288,
+        "max_input_size":       448,
+        "anchors":              [60,33, 66,60, 111,66, 115,45, 133,93, 163,65, 191,114, 306,142, 356,292],
+        "labels":               ["number_plate"]
+    },
+
+    "train": {
+        "train_image_folder":   "/home/sanbeaux/Downloads/images/",
+        "train_annot_folder":   "/home/sanbeaux/Downloads/labels/",
+        "cache_name":           "number_plate.pkl",
+
+        "train_times":          3,
+        "batch_size":           16,
+        "learning_rate":        1e-4,
+        "nb_epochs":            100,
+        "warmup_epochs":        3,
+        "ignore_thresh":        0.5,
+        "gpus":                 "0",
+
+        "grid_scales":          [1,1,1],
+        "obj_scale":            5,
+        "noobj_scale":          1,
+        "xywh_scale":           1,
+        "class_scale":          1,
+
+        "tensorboard_dir":      "number_plate",
+        "saved_weights_name":   "number_plate_model.h5",
+        "debug":                true
+    },
+
+    "valid": {
+        "valid_image_folder":   "",
+        "valid_annot_folder":   "",
+        "cache_name":           "",
+
+        "valid_times":          1
+    }
+}
