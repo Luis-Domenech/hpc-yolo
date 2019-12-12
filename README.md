@@ -1,3 +1,5 @@
+### It's important to note that this code was taken from https://github.com/experiencor/keras-yolo3 and edited to work with python3 and tensorflow v1.13.1
+
 # YOLO3 (Detection, Training, and Evaluation)
 
 ## Dataset and Model
