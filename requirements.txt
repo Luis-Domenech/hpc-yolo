@@ -2,7 +2,7 @@ setuptools==41.4.0
 opencv_python==4.1.1.26
 scipy==1.1.0
 tensorflow==1.13.1
-tensorflow-gpu==1.13.1
+tensorflow-gpu==2.3.1
 tqdm==4.31.1
 Keras==2.1.6
 numpy==1.16.3
