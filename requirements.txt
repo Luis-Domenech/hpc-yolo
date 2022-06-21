@@ -5,4 +5,4 @@ tensorflow==1.13.1
 tensorflow-gpu==1.13.1
 tqdm==4.31.1
 Keras==2.1.6
-numpy==1.16.3
+numpy==1.22.0
